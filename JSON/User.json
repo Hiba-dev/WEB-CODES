@@ -1,0 +1,28 @@
+
+     {
+         "user" : [                
+     {
+        "name":"hiba",
+        "id" : 11,
+        "age": 20,
+        "isdeveloper": true
+
+    },
+    {
+     "university":"ubit",
+      "year": 2,
+       "cgpa": 4,
+        "faculty":null
+     }
+],
+"color": ["red","blue","pink"],
+"computer":{
+             "hardware":"300gb",
+             "processor":"intel",
+             "ram":"8gb",
+             "window":10
+},
+"college":"nca",
+"isartist":true,
+"luckyno":10
+}

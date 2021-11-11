@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width,
+    initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"  content="ie=edge">
+    
+    <title>JS Crash Course</title>
+
+ <!--script>
+   alert("Goodbye world")
+ </script-->
+
+</head>
+
+<body>
+
+<header>
+<h1>JS Crash Course</h1>
+</header>
+
+<!--First way of adding JS (Internal way)-->
+<!--script>
+    alert('Hello World')
+</script-->
+
+<!--Another way of adding JS/ External way(Recommended way)-->
+<!--script src="main.js"></script-->
+
+<!--script>
+    document.write("welcome to this channel")
+</script-->
+
+<!--DECLARATION OF VARIABLES-->
+<!--script>
+    var a;
+    var x= 10;
+    var y =9.5;
+    var x= "hiba";
+</script-->
+
+<!--OPERATORS IN JS-->
+
+<!--script>
+    var a= 10;
+    var b= 20;
+    var c= a+b;
+    document.write(c);
+</script-->
+
+<!--POST INCREMENT-->
+<!--script>
+        var a= 10;
+        var b= 20;
+        var c= a+b;
+        var d= a++;
+        document.write(c);
+        document.write("<br>");
+        document.write(d);
+    </script-->
+    <br>
+    <!--PRE INCREMENT-->
+<!--script>
+        var a= 10;
+        var b= 20;
+        var c= a+b;
+        var d= ++a;
+        document.write(c);
+        document.write("<br>");
+        document.write(d);
+    </script-->
+    
+    <!--PRE DECREMENT-->
+<!--script>
+    var a= 10;
+    var b= 20;
+    var c= a+b;
+    var d= --a;
+    document.write(c);
+    document.write("<br>");
+    document.write(d);
+</script-->
+
+<!--POST DECREMENT-->
+<!--script>
+    var a= 10;
+    var b= 20;
+    var c= a+b;
+    var d= a--;
+    document.write(c);
+    document.write("<br>");
+    document.write(d);
+</script-->
+
+<!--conditional operators-->
+<!--script>
+    var a= 10;
+    var b= 20;
+    var c= a>b;
+    document.write(c);
+</script>
+<br>
+<script>
+    var a= 10;
+    var b= 10;
+    var c= a==b;
+    document.write(c);
+</script-->
+
+<!--double equals to (only check values)-->
+<!--script>
+    var a= 10;
+    var b= 10;
+    var c= a==b;
+    document.write(c);
+</script-->
+
+<!--tripple equals to (check values & datatypes)-->
+<!--script>
+    var a= 10;
+    var b= "10";
+    var c= a===b;
+    document.write(c);
+</script-->
+
+<!--conditions in JS-->
+<!--script>
+    var x=50;
+    var y=70;
+    if(x>y)
+    {
+        document.write("its true");
+    }
+    else
+    {
+        document.write("its false");
+    }
+</script-->
+
+<!--if more than 1 condition-->
+<!--script>
+        var x=50;
+        var y=50;
+        if(x>y)
+        {
+            document.write("its true");
+        }
+        else if(x==y)
+        {
+            document.write("its equal");
+        }
+        else
+        {
+            document.write("nothing");
+        }
+    </script-->
+    
+    <!--switch case-->
+    <!--script>
+        var a=10;
+        var b=20;
+        var c=30;
+        switch(b)
+        {
+            case 10: document.write("its case 10");
+            break;
+            case 30: document.write("its case 30");
+            break;
+            case 20: document.write("its case 20");
+            break;
+        }
+    </script-->
+    
+    <!--loops-->
+    <!--script>
+        var count=3;
+        while(count<=7)
+        {
+            document.write("while loop<br>");
+            count++;
+        }
+    </script-->
+    
+    <!--script>
+    var i=2;
+    do{
+        document.write("do-while loop<br>");
+        i++;
+    }while(i<12);
+    </script-->
+
+    <!--script>
+    var x=5;
+    for(var i=1; i<=x; i++)
+    {
+        document.write("for loop<br>");
+    }
+    </script-->
+    
+    <!--ARRAY IN JS-->
+    <!--1st way-->
+    <!--script>
+    var arrays = new Array;
+    arrays[0] = "hiba";
+    arrays[1] = "ahmed";
+    document.write(arrays[0]);
+    </script-->
+    
+    <!--2nd way-->
+    <!--script>
+    var arrays = new Array("hiba", "ahmed");
+    document.write(arrays[1]);
+    </script-->
+
+ <!--3rd way-->
+ <!--script>
+        var arrays = ["hiba", "ahmed"];
+        document.write(arrays[0]+" "+arrays[1]);
+        </script-->
+
+<!--METHODS IN ARRAY-->
+<!--concat method-->
+<!--script>
+var alpha = ["a","b","c"];
+var numeric = ["1","2","3"];
+
+var alphanumeric = alpha.concat(numeric);
+document.write("aplhanumeric:  "+alphanumeric);
+</script-->
+
+<!--sort method (sort a/c to ASCII)-->
+<!--script>
+var emp = new Array(5);
+emp[0]="java";
+emp[1]="php";
+emp[2]="sql";
+emp[3]="c#";
+emp.sort();
+document.write(emp[0]);
+document.write("<br>");
+document.write(emp[1]);
+document.write("<br>");
+document.write(emp[2]);
+document.write("<br>");
+document.write(emp[3]);
+</script-->
+<!--push method-->
+<!--script>
+        var emp = new Array(5);
+        emp[0]="java";
+        emp[1]="php";
+        emp[2]="sql";
+        emp[3]="c#";
+        emp[4]="js";
+        emp.push();
+        document.write(emp[0]);
+        document.write("<br>");
+        document.write(emp[1]);
+        document.write("<br>");
+        document.write(emp[2]);
+        document.write("<br>");
+        document.write(emp[3]);
+        document.write("<br>");
+        document.write(emp[4]);
+        </script-->
+       
+        <!--pop method-->
+       <!--script>
+        var emp = new Array(5);
+        emp[0]="java";
+        emp[1]="php";
+        emp[2]="sql";
+        emp[3]="c#";
+        emp[4]="js";
+        emp.pop();
+        document.write(emp[0]);
+        document.write("<br>");
+        document.write(emp[1]);
+        document.write("<br>");
+        document.write(emp[2]);
+        document.write("<br>");
+        document.write(emp[3]);
+        document.write("<br>");
+        document.write(emp[4]);
+        </script-->
+        
+        <!--FUNCTIONS/METHODS IN JS-->
+        <!--1st way-->
+        <!--script>
+            function sum() //function defined
+            {
+             var a=10, b=10;
+             var c= a+b;
+             document.write(c);
+            }
+
+            sum(); //function calling
+        </script-->
+        
+        <!--2nd way-->
+        <!--script>
+                function sum(a,b) //function defined
+                {
+                 var c= a+b;
+                 document.write(c);
+                }
+    
+                sum(50,50); //function calling
+        </script-->
+        
+        <!--STRINGS IN JS-->
+        <!--string length method-->
+        <!--script>
+        var str = "javascript";
+        var answer = str.length;
+        document.write(answer);
+       </script-->
+       
+       <!--charat method-->
+       <!--script>
+        var str = "javascript";
+        var answer = str.charAt(3);
+        document.write(answer);
+       </script-->
+        
+         <!--charcodeat method (ascii code)-->
+         <!--script>
+          var str = "javascript";
+          var answer = str.charCodeAt(4);
+          document.write(answer);
+         </script-->
+           
+           <!--indexof method-->
+           <!--script>
+            var str = "javascript";
+            var answer = str.indexOf('v');
+            document.write(answer);
+           </script-->
+           
+            <!--localeCompare method-->
+            <!--script>
+                var str = "javascript";
+                var answer = str.localeCompare("ava");
+                document.write(answer);
+             </script-->
+               
+               <!--localeCompare method-->
+               <!--script>
+                   var str = "javascript";
+                   var answer = str.localeCompare("nca");
+                   document.write(answer);
+                </script-->
+        
+        <!--EVENTS IN JS-->
+        <!--onclick event-->
+        <!--button onclick="myfun()">Click me</button>
+
+        <script>
+        function myfun() //function defining
+        {
+            document.write("hello bro");
+        }
+       </script>
+       <br><br-->
+
+       <!--onmouseover event-->
+       <!--button onmouseover = "myfun()">Click me</button>
+
+       <script>
+       function myfun() //function defining
+       {
+           document.write("hello bro");
+       }
+      </script>
+        <br><br-->
+
+        <!--onmousedown event-->
+        <!--button onmousedown = "myfun()">Click me</button>
+ 
+        <script>
+        function myfun() //function defining
+        {
+            document.write("hello bro");
+        }
+       </script>
+         <br><br-->
+
+         <!--onmouseout event-->
+         <!--button onmouseout = "myfun()">Click me</button>
+  
+         <script>
+         function myfun() //function defining
+         {
+             document.write("hello bro");
+         }
+        </script-->
+        
+        <!--Calculator using eval event-->
+        <!--form name="example">
+        <input type="text" size="20" name="calculator">
+        <input type="button" name="B1" value="Calculate" onclick="cal()">
+        <input type="reset" name="b2" value="Reset">
+        Answer:<input type="text" size="20" name="answer">
+        </form>
+
+        <script>
+        function cal()
+        {
+            document.example.answer.value=
+            eval(document.example.calculator.value)
+        }
+        </script-->
+        
+        <!--Window.location in js-->
+        <!--input type="button" onclick="myfunc()" value="click me"></input>
+
+        <script>
+            function myfunc(){
+                debugger;
+                window.location="https://unsplash.com"
+            }
+        </script-->
+
+        <!--DIALOG BOXES IN JS-->
+         
+        <!--confirmation dialog box-->
+        <!--input type="button" onclick="confirmation()" value="click me"></input>
+        
+        <script>
+            var ans= confirm("if you want to see website then click OK button")
+            if(ans){
+                alert("welcome to my blog")
+                window.location= "https://unsplash.com/search/photos/hd-wallpaper";
+            }
+            else{
+                alert("sorry! you click on cancel button")
+            }
+        </script-->
+
+        <!--prompt dialog box--> 
+        <!--input type="button" onclick="myfunction()" value="click me"></input>
+
+        <script>
+            function myfunction()
+            {
+                var str= prompt("hi! my name is hiba and whats your name ", "")
+                alert("nice to meet you "+str+ "!")
+            }
+        </script-->
+
+        <!--MATH OBJECTS-->
+
+ <!--Math.floor-->
+ <!--script>
+       var a = Math.floor(5.6); //consider downward values
+       document.write(a);
+ </script-->
+
+ <!--Math.round-->
+ <!--script>
+        var a = Math.round(9.46); //round off values
+        document.write(a);
+    </script-->        
+
+    <!--Math.log-->
+ <!--script>
+        var a = Math.log(7.9); //log values
+        document.write(a);
+    </script-->
+    
+    <!--Math.max-->
+ <!--script>
+        var a = Math.max(9,6,10); //max values
+        document.write(a);
+    </script-->        
+
+<!--Math.min-->
+<!--script>
+        var a = Math.min(6,1,8,3); //min values
+        document.write(a);
+</script-->
+
+<!--Math.pow-->
+<!--script>
+        var a = Math.pow(2,3); //power
+        document.write(a);
+</script-->        
+
+<!--Math.sqrt-->
+<!--script>
+        var a = Math.sqrt(9); //sq root
+        document.write(a);
+</script-->
+
+<!--Math.random-->
+ <!--script>
+        var a = Math.random(); //give random values b/w 0 & 1
+        document.write(a);
+</script-->        
+
+<!--DATE & TIME-->
+<!--script>
+document.write(Date());
+</script-->
+
+<!--DIFF DATE/TIME METHODS-->
+
+<!--GET METHODS OF DATE-->
+<!--script>
+var dt = new Date(); //obj of date
+
+document.write("getDay() : " + dt.getDay()); //days b/w 0-6
+document.write("<br> getFullYear() : " + dt.getFullYear());
+document.write("<br> getMilliseconds() : " + dt.getMilliseconds());
+document.write("<br> getHours() : " + dt.getHours());
+document.write("<br> getMinutes() : " + dt.getMinutes());
+document.write("<br> getMonth() : " + dt.getMonth());
+document.write("<br> getSeconds() : " + dt.getSeconds());
+document.write("<br> getTime() : " + dt.getTime()); //timing from 1 jan 1970 in milliseconds
+</script-->
+
+<!--SET METHODS OF DATE-->
+<!--script>
+    var dt = new Date("Dec 29, 2019  23:30:00 "); //set value through obj
+    document.write(dt);
+
+    document.write("<br>");
+    dt.setDate(17);
+    document.write(dt);
+
+    document.write("<br>");
+    dt.setMonth(6);
+    document.write(dt);
+
+    document.write("<br>");
+    dt.setHours(4);
+    document.write(dt);
+
+    document.write("<br>");
+    dt.setMinutes(50);
+    document.write(dt);
+
+    document.write("<br>");
+    dt.setFullYear(2017);
+    document.write(dt);
+
+    document.write("<br>");
+    dt.setSeconds(35);
+    document.write(dt);
+    
+</script-->
+
+
+<!--VALIDATIONS IN JS-->
+
+<!--form name="myform" onsubmit="return validation()">
+Username: <input type="text" value="" id="user"> <span id="username"></span><br></br>
+Password: <input type="password" value="" id="pass"> <span id="password"></span><br></br>
+<input type="submit" value="Submit"> 
+</form>
+
+<script>
+function validation()
+{
+    var un= document.getElementById("user").value;
+    var ps= document.getElementById("pass").value;
+
+    if(un == "") 
+    {
+     document.getElementById("username").innerHTML="**Please fill the username";
+     return false;
+    }
+
+    if(ps == "") 
+    {
+     document.getElementById("password").innerHTML="**Please fill the password";
+     return false;
+    }
+
+}
+</script-->
+</body>
+</html>
+
+

@@ -1,0 +1,84 @@
+body{
+    background-color:white;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+.container{
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+#main-header{
+    background-color: coral;
+    color: white;
+}
+
+#navbar{
+    background-color: rgb(53, 52, 52);
+     text-decoration: none;
+}
+
+#navbar ul{
+    padding: 0;    
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+#showcase{
+    background-image: url('../@pics/abstract.jpg');
+    background-position: center right ;
+   min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#showcase h1{
+    color: whitesmoke;
+font-size: 45px;
+line-height: 1.6em;
+padding-top: 30px;
+}
+#main{
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#sidebar{
+    float:right;
+    width:30%;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    background-color:rgb(65, 60, 60);
+    margin-top: 70px
+}
+#main-footer{
+    background: rgb(53, 51, 51);
+    color:white;
+    text-align: center;
+padding: 10px;
+margin-top: 120px;
+}
+@media(max-width:600px){
+    #main{
+        width:100%;
+        float:none;
+    }
+    #sidebar{
+        width:100%;
+        float: none;
+    }
+}
